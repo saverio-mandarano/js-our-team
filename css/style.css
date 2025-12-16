@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+form {
   color: rgb(229, 49, 112);
 }
