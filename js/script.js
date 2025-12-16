@@ -67,7 +67,7 @@ function addMember(e){
   const newMember = {
     name,
     role,
-    image
+    img
   }
   
   // Aggiungo il nuovo membro all'array di oggetti
@@ -89,7 +89,7 @@ function renderTeam(members, container) {
     const member = members[i];
     const card = `
       <div class="card">
-        <img src="../${member.image}" class="card-img-top" alt="${member.name}">
+        <img src="${member.img}" class="card-img-top" alt="${member.name}">
         <div class="card-text">
           <h3>${member.name}</h3>
           <p>${member.role}</p>
