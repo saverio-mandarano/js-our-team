@@ -7,21 +7,21 @@
 }
 
 /* Small (mobile large / tablet verticale) */
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) {
   .c-card {
     width: calc(100% / 2 - (20px / 2));
   }
 }
 
 /* Medium (tablet) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   .c-card {
     width: calc(100% / 3 - (40px / 3));
   }
 }
 
 /* Large (desktop) */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) {
   .c-card {
     width: calc(100% / 4 - (60px / 4));
   }
