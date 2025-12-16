@@ -37,8 +37,20 @@ const teamMembers = [
   }
 ];
 
-//seleziono elementi del form
-const memberForm = document.getElementById(`add-member-form`);
+// Seleziono elementi del form
+const addMemberForm = document.getElementById(`add-member-form`);
 const nameInput = document.getElementById(`name-new-member`);
 const roleInput = document.getElementById(`role-new-member`);
 const imageInput = document.getElementById(`image-new-member`);
+
+// Aggiunto evento per aggiungere nuovo membro al submit
+addMemberForm.addEventListener("submit", addMember);
+
+
+// Funzioni
+
+// Funzione per aggiungere un nuovo membro
+function addMember(e){
+  e.preventDefault();
+  
+}
