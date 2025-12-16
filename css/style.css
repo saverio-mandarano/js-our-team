@@ -21,4 +21,5 @@ h2 {
 .c-card {
   width: calc(100% / 3 - (40px / 3));
   cursor: pointer;
+  /* background-color: black; */
 }
