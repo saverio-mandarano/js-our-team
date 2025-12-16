@@ -18,7 +18,7 @@ h2 {
   gap: 20px;
 }
 
-.card {
+.c-card {
   width: calc(100% / 3 - (40px / 3));
   cursor: pointer;
 }

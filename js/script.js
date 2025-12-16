@@ -92,11 +92,11 @@ function renderTeam(members, container) {
   for (let i = 0; i < members.length; i++) {
     const member = members[i];
     const card = `
-      <div class="card">
-        <div class="card-img">
+      <div class="c-card d-flex">
+        <div class="c-card-img w-25">
           <img src="${member.img}" class="card-img-top" alt="${member.name}">
         </div>
-        <div class="card-text">
+        <div class="c-card-text w-75">
           <h3>${member.name}</h3>
           <p>${member.role}</p>
         </div>
