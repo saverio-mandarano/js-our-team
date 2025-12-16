@@ -1,15 +1,11 @@
-/* Extra small (mobile) */
-@media screen and (max-width: 575px) {
-  .c-card {
-    width: 100%;
-    cursor: pointer;
-  }
-}
-
 /* Small (mobile large / tablet verticale) */
 @media screen and (min-width: 576px) {
   .c-card {
     width: calc(100% / 2 - (20px / 2));
+  }
+
+  #team-container {
+    width: 100%;
   }
 }
 
