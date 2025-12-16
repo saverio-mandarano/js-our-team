@@ -37,25 +37,28 @@ const teamMembers = [
   }
 ];
 
-// Seleziono elementi del form
+// Seleziono elementi
 const addMemberForm = document.getElementById(`add-member-form`);
 const nameInput = document.getElementById(`name-new-member`);
 const roleInput = document.getElementById(`role-new-member`);
 const imageInput = document.getElementById(`image-new-member`);
 
+const teamContainer = document.getElementById(`team-container`);
+
+
 // Aggiunto evento per aggiungere nuovo membro al submit
 addMemberForm.addEventListener("submit", addMember);
+
+// Chiamo funzione per renderizzare le cards
+renderTeam(teamMembers, teamContainer);
 
 
 // Funzioni
 
 // Funzione per aggiungere un nuovo membro
 function addMember(e){
-
-  //prevengo comportamento di default del form
   e.preventDefault();
 
-  //recupero valori dal form
   const name = nameInput.value;
   const role = roleInput.value;
   const image = imageInput.value;
@@ -74,3 +77,26 @@ function addMember(e){
   addMemberForm.reset();
 
 }
+
+
+
+
+
+// Funzione per renderizzare le card
+function renderTeam(members, container) {
+
+  for (let i = 0; i < members.length; i++) {
+    const member = members[i];
+    const card = `
+      <div class="card">
+        <img src="../${member.image}" class="card-img-top" alt="${member.name}">
+        <div class="card-text">
+          <h3>${member.name}</h3>
+          <p>${member.role}</p>
+        </div>
+      </div>
+    `;
+    container.innerHTML += card;
+  }
+}
+
