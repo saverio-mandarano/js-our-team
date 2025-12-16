@@ -51,6 +51,23 @@ addMemberForm.addEventListener("submit", addMember);
 
 // Funzione per aggiungere un nuovo membro
 function addMember(e){
+
+  //prevengo comportamento di default del form
   e.preventDefault();
+
+  //recupero valori dal form
+  const name = nameInput.value;
+  const role = roleInput.value;
+  const image = imageInput.value;
   
+  // Creo il nuovo membro come oggetto
+  const newMember = {
+    name,
+    role,
+    image
+  }
+  
+  // Aggiungo il nuovo membro all'array di oggetti
+  teamMembers.push(newMember);
+
 }
