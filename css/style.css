@@ -5,11 +5,21 @@
   box-sizing: border-box;
 }
 
+/* Generics */
 h1,
 h2 {
   color: rgb(229, 49, 112);
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CARD */
 #team-container {
   display: flex;
   flex-wrap: wrap;
@@ -22,4 +32,18 @@ h2 {
   width: calc(100% / 3 - (40px / 3));
   cursor: pointer;
   /* background-color: black; */
+}
+
+.c-card-text {
+  padding-top: 5px;
+}
+
+ul li {
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul li:first-child {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: 900;
 }

@@ -42,6 +42,7 @@ const addMemberForm = document.getElementById(`add-member-form`);
 const nameInput = document.getElementById(`name-new-member`);
 const roleInput = document.getElementById(`role-new-member`);
 const imageInput = document.getElementById(`image-new-member`);
+const emailInput = document.getElementById(`email-new-member`);
 
 const teamContainer = document.getElementById(`team-container`);
 
@@ -62,12 +63,14 @@ function addMember(e){
   const name = nameInput.value;
   const role = roleInput.value;
   const img = imageInput.value;
+  const email = emailInput.value;
   
   // Creo il nuovo membro come oggetto
   const newMember = {
     name,
     role,
-    img
+    img,
+    email
   }
   
   // Aggiungo il nuovo membro all'array di oggetti
@@ -97,8 +100,11 @@ function renderTeam(members, container) {
           <img src="${member.img}" class="card-img-top" alt="${member.name}">
         </div>
         <div class="c-card-text w-75 bg-black text-white">
-          <h3>${member.name}</h3>
-          <p>${member.role}</p>
+          <ul>
+            <li>${member.name}</li>
+            <li>${member.role}</li>
+            <li><a href="mailto:${member.email}">${member.email}</a></li>
+          </ul>
         </div>
       </div>
     `;
