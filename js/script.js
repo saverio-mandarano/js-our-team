@@ -36,3 +36,9 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+//seleziono elementi del form
+const memberForm = document.getElementById(`add-member-form`);
+const nameInput = document.getElementById(`name-new-member`);
+const roleInput = document.getElementById(`role-new-member`);
+const imageInput = document.getElementById(`image-new-member`);
