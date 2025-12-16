@@ -1,0 +1,28 @@
+/* Extra small (mobile) */
+@media screen and (max-width: 575px) {
+  .c-card {
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+/* Small (mobile large / tablet verticale) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .c-card {
+    width: calc(100% / 2 - (20px / 2));
+  }
+}
+
+/* Medium (tablet) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .c-card {
+    width: calc(100% / 3 - (40px / 3));
+  }
+}
+
+/* Large (desktop) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .c-card {
+    width: calc(100% / 4 - (60px / 4));
+  }
+}

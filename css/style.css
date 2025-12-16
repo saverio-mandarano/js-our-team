@@ -28,12 +28,6 @@ a {
   gap: 20px;
 }
 
-.c-card {
-  width: calc(100% / 3 - (40px / 3));
-  cursor: pointer;
-  /* background-color: black; */
-}
-
 .c-card-text {
   padding-top: 5px;
 }
