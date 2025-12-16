@@ -70,4 +70,7 @@ function addMember(e){
   // Aggiungo il nuovo membro all'array di oggetti
   teamMembers.push(newMember);
 
+  // Form reset
+  addMemberForm.reset();
+
 }
