@@ -61,7 +61,7 @@ function addMember(e){
 
   const name = nameInput.value;
   const role = roleInput.value;
-  const image = imageInput.value;
+  const img = imageInput.value;
   
   // Creo il nuovo membro come oggetto
   const newMember = {
@@ -76,6 +76,9 @@ function addMember(e){
   // Form reset
   addMemberForm.reset();
 
+  // Chiamo funzione per aggiornare renderizzazione carte
+  renderTeam(teamMembers, teamContainer);
+
 }
 
 
@@ -84,12 +87,15 @@ function addMember(e){
 
 // Funzione per renderizzare le card
 function renderTeam(members, container) {
+  container.innerHTML = ``; // svuota il contenitore
 
   for (let i = 0; i < members.length; i++) {
     const member = members[i];
     const card = `
       <div class="card">
-        <img src="${member.img}" class="card-img-top" alt="${member.name}">
+        <div class="card-img">
+          <img src="${member.img}" class="card-img-top" alt="${member.name}">
+        </div>
         <div class="card-text">
           <h3>${member.name}</h3>
           <p>${member.role}</p>
