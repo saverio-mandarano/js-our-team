@@ -103,7 +103,7 @@ function renderTeam(members, container) {
           <ul>
             <li>${member.name}</li>
             <li>${member.role}</li>
-            <li class="mt-2"><a href="mailto:${member.email}">${member.email}</a></li>
+            <li class="mt-2"><a class="text-info" href="mailto:${member.email}">${member.email}</a></li>
           </ul>
         </div>
       </div>
