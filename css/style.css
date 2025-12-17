@@ -42,12 +42,12 @@ ul li:first-child {
   font-weight: 900;
 }
 
-.c-card-img img {
-  height: 100%;
-  object-fit: cover;
+.c-card {
+  cursor: pointer;
 }
 
-.c-card {
+.c-card-img img {
   width: 100%;
-  cursor: pointer;
+  height: 100%;
+  object-fit: cover;
 }

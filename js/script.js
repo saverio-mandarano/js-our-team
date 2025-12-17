@@ -97,7 +97,7 @@ function renderTeam(members, container) {
     const card = `
       <div class="c-card d-flex">
         <div class="c-card-img w-25">
-          <img src="${member.img}" class="card-img-top" alt="${member.name}">
+          <img src="${member.img}" alt="${member.name}">
         </div>
         <div class="c-card-text w-75 bg-black text-white">
           <ul>
